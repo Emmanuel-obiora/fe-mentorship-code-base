@@ -1,0 +1,104 @@
+@import url(C:\Users\Samuel\Downloads\blog-preview-card-main\blog-preview-card-main\assets\fonts\Figtree-Italic-VariableFont_wght.ttf);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+    --Yellow: hsl(47, 88%, 63%);
+}
+
+body {
+    background-color: var(--Yellow);
+    font-family: "Figtree";
+    display: grid;
+    color: var(--Black);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+    text-align: start;
+    border: 1px solid var(--Black);
+    box-shadow: var(--Black) 10px 10px 5px;
+    margin-top: 3rem;
+}
+git 
+h1 {
+    font-size: 0.8rem;
+    font-weight: 800;
+    width: max-content;
+    margin: 15px 0 10px 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: var(--Yellow);
+}
+
+p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+    color: var(--Black);
+}
+
+.direct {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--Black);
+    padding-bottom: 15px;
+}
+
+.direct:hover {
+    color: var(--Yellow);
+}
+
+article p {
+    color: var(--Grey);
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: auto;
+    height: 20px;
+}
+
+h3 {
+    font-size: 0.8rem;
+    font-weight: 800;
+    width: max-content;
+    padding: 0.5rem;
+}
+
+.attribution {
+    display: flex;
+    font-size: 16px; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.attribution a { 
+    font-size: 16px;
+    color: var(--White);
+    text-decoration: none;
+    margin-left: 3px;
+}
