@@ -14,6 +14,105 @@
 
 body {
     font-family: "League Spartan", sans-serif;
+    /* Weights: 400, 500, 700 */
+}
+
+main {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    margin-right: 3rem;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--Dark-Grayish-Magenta);
+    margin-bottom: 2rem;
+}
+
+.star {
+    margin: 2px;
+}
+
+.rates {
+    display: flex;
+    width: max-content;
+    align-items: center;
+    background-color: var(--Light-Grayish-Magenta);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.rates p {
+    font-size: 0.8rem;
+    color: var(--Very-Dark-Magenta);
+    margin: 1rem;
+    font-weight: 700;
+}
+
+.reviews {
+    display: flex;
+    padding: 0 5rem;
+    max-width: max-content;
+}
+
+img {
+    border-radius: 50px;
+    width: 10%;
+    height: auto;
+}
+
+.users {
+    background-color: var(--Very-Dark-Magenta);
+    color: var(--White);
+    border-radius: 5px;
+    padding: 1rem;
+    margin-right: 1.5rem;
+}
+
+.users h2 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--Light-Grayish-Magenta);
+}
+
+/* .user {
+    display: flex; 
+} */
+
+.profile {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--Soft-Pink);
+    /* margin-top: 1.5rem; */
+}
+
+.about {
+    color: var(--Light-Grayish-Magenta);
+    line-height: 1.2rem;
 }
 
 .attribution {
