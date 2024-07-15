@@ -18,6 +18,8 @@ body {
     box-sizing: border-box;
     Font-size: 15px;
     font-family: "Poppins", sans-serif;
+    display: grid;
+    height: 100vh;
 }
 
 .container {
@@ -25,11 +27,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 5rem;
 }
 
 h1 {
     color: var(--Very-Dark-Blue);
+    line-height: 1.3;
 }
 
 .top {
@@ -37,14 +39,14 @@ h1 {
     text-align: center;
     color: var(--Grayish-Blue);
     font-size: 10px;
-    padding-top: 0.5rem;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
 }
 
 .card {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 .subcard {
@@ -57,10 +59,10 @@ h1 {
     height: 120px;
 }
 
-svg {
-    margin-left: 7rem;
-    display: flex;
-    align-items:flex-end ;
+img {
+    display: block;
+    margin-left: auto;
+    margin-top: auto;
 }
 
 h2 {
@@ -74,9 +76,13 @@ p {
     color: var(--Grayish-Blue);
 }
 
+footer{
+    margin-top: auto;
+}
+
 .attribution {
-    /* display: flex;
-    justify-content: baseline; */
+    display: grid;
+    margin-top: auto;
     font-size: 11px; 
     text-align: center; 
 }
@@ -84,4 +90,63 @@ p {
 .attribution a { 
     text-decoration: none;
     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 37.5rem){
+    body {
+        align-items: center;
+    }
+
+    .container{
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 3rem;
+        margin: auto;
+        width: 22rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 25px;
+        display: flex;
+        line-height: 0.7;
+    }
+
+    .top {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    article{
+        position: relative;
+    }
+
+    .subcard {
+        padding: 24px;
+        box-shadow: 0 5px 7px 1px #d3deeb;
+        height: 190px;
+        width: auto;
+    }
+
+    .card {
+        flex-direction: column;
+        margin: 64px 0;
+    }
+
+    h2 {
+        font-size: 23px;
+        /* color: var(--Very-Dark-Blue);
+        font-weight: 600; */
+    }
+    
+    p {
+        font-size: 15px;
+    }
+
+    img {
+        width: auto;
+        height: 45%;
+        margin-bottom: 0;
+    }
 }
