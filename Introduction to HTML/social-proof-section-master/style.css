@@ -14,6 +14,9 @@
 
 body {
     font-family: "League Spartan", sans-serif;
+    /* display: grid; */
+    height: 100vh;
+    font-size: 15px;
     /* Weights: 400, 500, 700 */
 }
 
@@ -29,12 +32,9 @@ main {
     justify-content: space-between;
 }
 
-.product {
+.intro {
     display: flex;
     flex-direction: column;
-}
-
-.intro {
     margin-right: 3rem;
 }
 
@@ -54,6 +54,8 @@ main {
 
 .star {
     margin: 2px;
+    width: 14%; 
+    height: 16%;
 }
 
 .rates {
@@ -76,7 +78,7 @@ main {
 .reviews {
     display: flex;
     padding: 0 5rem;
-    max-width: max-content;
+    width: fit-content;
 }
 
 img {
@@ -115,6 +117,11 @@ img {
     line-height: 1.2rem;
 }
 
+footer {
+    display: grid;
+    margin-bottom: auto;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -122,4 +129,72 @@ img {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 37.5rem){
+
+    main {
+        display: flex;
+        flex-direction: column ;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+        padding: 0;
+    }
+
+    .intro {
+        display: block;
+        text-align: center;
+        margin-left: 3rem;
+    }
+
+    .intro h1 {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .intro p {
+        line-height: 1.2;
+    }
+
+    .rates {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.3rem;
+        width: 15rem;
+    }
+
+    .rates p {
+        font-size: 0.8rem;
+        margin-top: 5px;
+        /* margin: ; */
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1.5rem;
+    }
+
+    .users {
+        width: 200%;
+        height: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    img {
+        border-radius: 50px;
+        width: 20%;
+        height: auto;
+    }
+
+    
 }
