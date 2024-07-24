@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -15,7 +16,8 @@
 }
 
 body {
-    box-sizing: border-box;
+    display: grid;
+    min-height: 100vh;
     Font-size: 15px;
     font-family: "Poppins", sans-serif;
 }
@@ -25,7 +27,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 5rem;
+    /* margin: 5rem; */
 }
 
 h1 {
@@ -75,10 +77,12 @@ p {
 }
 
 .attribution {
-    /* display: flex;
-    justify-content: baseline; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 11px; 
-    text-align: center; 
+    margin-top: auto; 
 }
     
 .attribution a { 
