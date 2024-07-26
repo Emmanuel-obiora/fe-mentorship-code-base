@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --SDark-Blue: hsl(211, 25%, 30%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body{
+    background-color: var(--Very-Dark-Blue);
+    color: var(--White);
+    display: grid;
+    height: 100vh;
+    font-size: 15px;
+    font-family: "Overpass", sans-serif;
+    /* Weights: 400, 700 */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Dark-Blue);
+    width: fit-content;
+    padding: 1.5rem;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.rate-star {
+    border-radius: 40px;
+    background-color: var(--SDark-Blue);
+    padding: 0.5rem;
+    margin-right: 13.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.question {
+    display: block;
+    text-align: left;
+}
+
+.question h1 {
+    font-weight: 700;
+}
+
+.question p {
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--Light-Grey);
+    font-weight: 400;
+    margin: 0.8rem 0;
+}
+
+.rating {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.ratingText {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0.5rem 0.8rem;
+    border-radius: 50px;
+    background-color: var(--SDark-Blue);
+    margin-left: 0.8rem;
+    color: var(--Light-Grey);
+    text-decoration: none;
+}
+
+.ratingText:hover {
+    color:var(--Dark-Blue);
+    background-color: var(--Orange);
+    cursor: pointer;
+}
+
+.ratingText:active {
+    color:var(--Dark-Blue);
+    background-color: var(--White);
+}
+
+.submit {
+    background-color: var(--Orange);
+    border-radius: 20px;
+    padding: 0.5rem 0 0.5rem 0;
+    width: 15rem;
+    text-decoration: none;
+    color: var(--Dark-Blue);
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.submit:hover {
+    background-color: var(--White);
+}
+
+/* Styling for Thank You page */
+
+.thanked {
+    width: 40%;
+    height: auto;
+}
+
+.selected {
+    margin: 1.3rem 0 1.8rem 0;
+    border-radius: 15px;
+    background-color: var(--SDark-Blue);
+    padding: 4px 12px;
+}
+
+.selected p {
+    color: var(--Orange);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.comment p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--Light-Grey);
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--Light-Grey);
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}

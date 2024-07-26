@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+  
+</head>
+<body>
+
+  <!-- Rating state start -->
+
+  <main>
+    <img src="images/icon-star.svg" alt="icon-star" class="rate-star">
+    <article class="question">
+      <h1>How did we do?</h1>
+      <p>Please let us know how we did with your support <br> request. All feedback is appreciated 
+      to help us <br> improve our offering!</p>
+    </article>
+    <div class="rating">
+      <p class="ratingText" onclick=ratingPick({a:1})>1</p>
+      <p class="ratingText" onclick=ratingPick({a:2})>2</p>
+      <p class="ratingText" onclick=ratingPick({a:3})>3</p>
+      <p class="ratingText" onclick=ratingPick({a:4})>4</p>
+      <p class="ratingText" onclick=ratingPick({a:5})>5</p>
+    </div>
+
+    <a href="thanks.html" class="submit">SUBMIT</a>
+
+    
+  </main>
+
+  <!-- Rating state end -->
+
+  
+  <footer class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p> 
+    <p>Coded by <a href="#">Samolino</a>.</p>
+  </footer>
+
+  <script src="test.js"></script>
+</body>
+</html>
