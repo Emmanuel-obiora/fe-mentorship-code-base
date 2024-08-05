@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Red: hsl(0, 100%, 74%) ;
+    --Green: hsl(154, 59%, 51%);
+    --Light-Green: hsl(154, 53%, 59%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+body {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--Red);
+    background-image: url(images/bg-intro-desktop.png);
+    color: white;
+    display: grid;
+    height: 100vh;
+    /* Weights: 400, 500, 600, 700 */
+}
+
+main {
+    text-align: center;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.intro {
+    display: block;
+    margin: auto;
+    padding-right: 3.5rem;
+    text-align: start;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.intro p {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.form-box {
+    width: 25rem;
+    padding-top: 1rem;
+}
+
+.trial {
+    font-size: 10px;
+    background-color: var(--Blue);
+    border-radius: 7px;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 0 10px solid var(--Dark-Blue);
+}
+
+#form {
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    box-shadow: 0 0 10px solid var(--Dark-Blue);
+}
+
+input {
+    padding: 0.8rem 0 0.8rem 1rem;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 1rem;
+    border: 1px solid var(--Grayish-Blue);
+    border-radius: 5px;
+    color: var(--Dark-Blue);
+}
+
+#firsterror, #lasterror, #emailerror, #passerror {
+    margin-top: 3px;
+    font-size: 10px;
+    color: var(--Red);
+    font-style: italic;
+    font-weight: 600;
+    text-align: end;
+}
+
+.success {
+    color: var(--Green);
+    display: block;
+}
+
+#form p {
+    font-size: 8px;
+    font-weight: 700;
+    color: var(--Grayish-Blue);
+}
+
+#button {
+    background-color: var(--Green);
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    margin: 0.8rem 0;
+    letter-spacing: 1px;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: var(--Light-Green);
+}
+
+.terms {
+    color: var(--Red);
+    text-decoration: none;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.attribution { 
+    font-size: 13px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: var(--Green); 
+    text-decoration: none;
+}
+
+@media screen and (max-width: 37.5rem){
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro {
+        display: block;
+        margin: auto;
+        text-align: center;
+        padding: 0;
+    }
+    
+    h1 {
+        font-size: 35px;
+        margin-bottom: 1rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+    
+    .intro p {
+        width: 20rem;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+
+    .form-box {
+        width: 20rem;
+    }
+    
+    .trial {
+        font-size: 15px;
+        margin-bottom: 1.2rem;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+        line-height: 1.7;
+    }
+
+    input {
+        font-size: 15px;
+    }
+
+    #button {
+        font-size: 14px;
+    }
+
+    #form p {
+        font-size: 12px;
+    }
+
+    footer {
+        margin-top: auto;
+    }
+}
